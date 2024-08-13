@@ -1,6 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware  #Connection of Frontend
 
+from src.database.register import register_tortoise
+from src.database.config import TORTOISE_ORM         
+
 app = FastAPI()
 
 #Frontend
@@ -12,9 +15,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+register_tortoise(app, config=TORTOISE_ORM, generate_schemas=False)
+
 @app.get("/")
 def home():
-    return "Hello, World! Serega 111"
+    return "Hello, World! By Serega"
 
 @app.get("/serega")
 def serega():
