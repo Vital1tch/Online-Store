@@ -1,24 +1,20 @@
-# frontend
+#Wassup!
 
-## Project setup
-```
-npm install
-```
+## Требования
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- Docker
+- Docker Compose
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Установка
+git clone
 
-### Lints and fixes files
-```
-npm run lint
+В терминале прописать:
+
+```bash
+docker-compose up --build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+##URL
+Frontend: http://localhost:8080
+Backend: http://127.0.0.1:5000
+
