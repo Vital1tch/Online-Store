@@ -1,4 +1,4 @@
-##Wassup!
+Wassup!
 
 ## Требования
 
@@ -16,5 +16,7 @@ git clone https://github.com/Vital1tch/Online-Store.git
 docker-compose up --build
 ```
 
-“URL --- * **Frontend:** http://localhost:8080 * **Backend:** [http://127.0.0.1:5000](http://127.0.0.1:5000)”
+Frontend: http://localhost:8080
+
+Backend: http://127.0.0.1:5000
 
