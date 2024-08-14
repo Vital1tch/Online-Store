@@ -19,8 +19,5 @@ register_tortoise(app, config=TORTOISE_ORM, generate_schemas=False)
 
 @app.get("/")
 def home():
-    return "Hello, World! By Serega"
+    return "Hello, World!!!"
 
-@app.get("/serega")
-def serega():
-    return "Serega!!!!1111122222222"

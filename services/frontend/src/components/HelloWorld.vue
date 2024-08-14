@@ -3,9 +3,6 @@
     <p>{{ msg }}</p>
   </div>
 
-  <div>
-    <p>{{ serega }}</p>
-  </div>
 </template>
 
 <script>
@@ -16,7 +13,6 @@ export default {
   data() {
     return {
       msg: '',
-      serega:'',
     };
   },
   methods: {
@@ -30,19 +26,9 @@ export default {
         });
     },
 
-    getSerega() {
-      axios.get('/serega')
-      .then((res) => {
-        this.serega = res.data;
-      })
-      .catch((error) => {
-          console.error(error);
-        });
-    },
   },
   created() {
     this.getMessage();
-    this.getSerega();
   },
 };
 </script>
